@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>小説家になろうビューワー</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: sans-serif; margin: 20px; }
+    input, button { font-size: 1em; margin: 5px; }
+    .novel { border-bottom: 1px solid #ccc; padding: 10px 0; }
+    .bookmark { color: red; cursor: pointer; margin-left: 10px; }
+  </style>
+</head>
+<body>
+  <h1>小説家になろうビューワー</h1>
+  <input type="text" id="search" placeholder="タイトルで検索">
+  <button onclick="renderList()">検索</button>
+  <button onclick="showBookmarks()">ブックマーク表示</button>
+  <div id="novelList"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
